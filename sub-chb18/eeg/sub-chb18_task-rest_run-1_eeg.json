@@ -1,0 +1,18 @@
+{
+    "TaskName": "rest",
+    "Manufacturer": "n/a",
+    "PowerLineFrequency": "n/a",
+    "SamplingFrequency": 256.0,
+    "SoftwareFilters": "n/a",
+    "RecordingDuration": 3610.99609375,
+    "RecordingType": "continuous",
+    "EEGReference": "n/a",
+    "EEGGround": "n/a",
+    "EEGPlacementScheme": "n/a",
+    "EEGChannelCount": 18,
+    "EOGChannelCount": 0,
+    "ECGChannelCount": 0,
+    "EMGChannelCount": 0,
+    "MiscChannelCount": 4,
+    "TriggerChannelCount": 0
+}
