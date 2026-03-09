@@ -144,6 +144,10 @@ def main(
     source_root = Path(source_root).expanduser()
     bids_root = Path(bids_root).expanduser()
 
+    if finalize_only:
+        _finalize_dataset(bids_root, overwrite=overwrite)
+        return
+
     records = list(_get_records(source_root))
 
     montage = make_standard_montage("standard_1005")
@@ -160,10 +164,6 @@ def main(
     # sanity check: no duplicate bids paths
     bids_paths = [bids_path.fpath for _, bids_path in records]
     assert len(bids_paths) == len(set(bids_paths)), "Duplicate BIDS paths found"
-
-    if finalize_only:
-        _finalize_dataset(bids_root, overwrite=overwrite)
-        return
 
     # Read subject info
     subject_info = pd.read_csv(
@@ -333,8 +333,17 @@ def _finalize_dataset(bids_root: Path, overwrite: bool = False):
         source_datasets=[
             {"URL": "https://physionet.org/content/chbmit/1.0.0/"},
         ],
-        authors=["Pierre Guetschel"],
+        authors=[
+            "Jack Connolly",
+            "Herman Edwards",
+            "Blaise Bourgeois",
+            "S. Ted Treves",
+            "Ali Shoeb",
+            "John Guttag",
+        ],
+        acknowledgements="Pierre Guetschel updated the data to BIDS format.",
         overwrite=overwrite,
+        data_license="ODC-By-1.0",
     )
 
     # cleanup macos hidden files

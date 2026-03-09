@@ -2,9 +2,16 @@
     "Name": "CHB-MIT",
     "BIDSVersion": "1.7.0",
     "DatasetType": "derivative",
+    "License": "ODC-By-1.0",
     "Authors": [
-        "Pierre Guetschel"
+        "Jack Connolly",
+        "Herman Edwards",
+        "Blaise Bourgeois",
+        "S. Ted Treves",
+        "Ali Shoeb",
+        "John Guttag"
     ],
+    "Acknowledgements": "Pierre Guetschel updated the data to BIDS format.",
     "ReferencesAndLinks": [
         "https://github.com/bernia/chb-mit-scalp"
     ],
