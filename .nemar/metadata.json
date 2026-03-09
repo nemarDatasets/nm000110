@@ -32,11 +32,6 @@
       "identifier": "10.13026/C2K01R",
       "identifier_type": "DOI",
       "relation_type": "IsVersionOf"
-    },
-    {
-      "identifier": "10.21105/joss.01896",
-      "identifier_type": "DOI",
-      "relation_type": "IsDescribedBy"
     }
   ],
   "sizes": [
@@ -50,8 +45,8 @@
     ".tsv",
     ".yml"
   ],
-  "description": "The CHB-MIT Scalp EEG Database consists of EEG recordings from 22 pediatric subjects with intractable seizures. This dataset was collected at Children's Hospital Boston and includes recordings from subjects aged 1.5-22 years (5 males, ages 3-22; and 17 females, ages 1.5-19) with epilepsy. The recordings contain 198 annotated seizures and were originally collected to characterize seizure patterns and assess patients' candidacy for surgical intervention. Subjects were monitored for up to several days following withdrawal of anti-seizure medication. The dataset comprises 686 EEG scans recorded at 256 Hz using the International 10-20 electrode system with bipolar montages. The original EEG data from PhysioNet has been converted to BIDS format with channel names standardized to the 10-05 montage naming convention.",
-  "methods_description": "Subjects were monitored for up to several days following withdrawal of anti-seizure medication in a controlled hospital environment at Children's Hospital Boston. EEG signals were recorded continuously at 256 samples per second with 16-bit resolution using the International 10-20 system of electrode positions with bipolar montages. Most recording files contain one hour of digitized EEG signals, with some containing two-hour or four-hour recordings. Each case contains between 9 and 42 continuous EEG recording files. Additional signals including ECG and vagal nerve stimulus (VNS) were recorded in some cases. The original .edf files from PhysioNet have been converted to BIDS format with channel names standardized to the 10-05 montage naming convention. Bipolar channel pairs are represented in the format 'Electrode1-Electrode2'. Non-EEG channels such as ECG are preserved with appropriate BIDS channel types. All protected health information (PHI) in the original files has been replaced with surrogate information.",
+  "description": "The CHB-MIT Scalp EEG Database is a collection of continuous EEG recordings from 22 pediatric subjects with intractable epilepsy, acquired at Children's Hospital Boston. The dataset comprises 686 EEG recordings with 198 annotated seizure events, collected during controlled anti-seizure medication withdrawal to characterize seizure patterns and assess surgical candidacy. Subjects included 5 males (ages 3-22) and 17 females (ages 1.5-19). Signals were sampled at 256 Hz using the International 10-20 electrode system with bipolar montages, and have been converted to BIDS format with standardized channel nomenclature and de-identified subject information.",
+  "methods_description": "Subjects were monitored continuously with scalp EEG following anti-seizure medication withdrawal in a hospital setting. EEG signals were recorded at 256 samples per second with 16-bit resolution using the International 10-20 electrode system in bipolar montage configuration. Most recordings contained 23 EEG channels; additional signals including ECG and vagal nerve stimulus were recorded in some cases. Recording files typically contained one hour of continuous data, with some cases containing two-hour or four-hour recordings. The original .edf files from PhysioNet have been converted to BIDS format with standardized channel nomenclature and de-identified subject information.",
   "keywords": [
     {
       "term": "EEG"
@@ -71,31 +66,25 @@
       "term": "scalp electroencephalography"
     },
     {
+      "term": "bipolar montage"
+    },
+    {
       "term": "seizure annotation"
-    },
-    {
-      "term": "intractable epilepsy"
-    },
-    {
-      "term": "seizure onset detection"
     },
     {
       "term": "BIDS"
     },
     {
-      "term": "clinical EEG"
+      "term": "intractable epilepsy"
     },
     {
-      "term": "seizure onset zone"
+      "term": "pediatric EEG"
     },
     {
-      "term": "surgical candidacy"
+      "term": "medication withdrawal"
     },
     {
-      "term": "bipolar montage"
-    },
-    {
-      "term": "PhysioNet"
+      "term": "surgical candidacy assessment"
     }
   ],
   "source_hash": "5a8ff07c0305cdd50bd005a994e70f69663211743c98b61c1e2c59e78c8d4f5a"
