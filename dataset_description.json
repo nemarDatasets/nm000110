@@ -1,30 +1,31 @@
 {
-    "Name": "CHB-MIT",
-    "BIDSVersion": "1.7.0",
-    "DatasetType": "derivative",
-    "License": "ODC-By-1.0",
-    "Authors": [
-        "Jack Connolly",
-        "Herman Edwards",
-        "Blaise Bourgeois",
-        "S. Ted Treves",
-        "Ali Shoeb",
-        "John Guttag"
-    ],
-    "Acknowledgements": "Pierre Guetschel updated the data to BIDS format.",
-    "ReferencesAndLinks": [
-        "https://github.com/bernia/chb-mit-scalp"
-    ],
-    "GeneratedBy": [
-        {
-            "Name": "MNE-BIDS",
-            "Version": "0.17.0",
-            "CodeURL": "https://mne.tools/mne-bids/"
-        }
-    ],
-    "SourceDatasets": [
-        {
-            "URL": "https://physionet.org/content/chbmit/1.0.0/"
-        }
-    ]
+  "Name": "CHB-MIT",
+  "BIDSVersion": "1.7.0",
+  "DatasetType": "derivative",
+  "License": "ODC-By-1.0",
+  "Authors": [
+    "Jack Connolly",
+    "Herman Edwards",
+    "Blaise Bourgeois",
+    "S. Ted Treves",
+    "Ali Shoeb",
+    "John Guttag"
+  ],
+  "Acknowledgements": "Pierre Guetschel updated the data to BIDS format.",
+  "ReferencesAndLinks": [
+    "https://github.com/bernia/chb-mit-scalp"
+  ],
+  "GeneratedBy": [
+    {
+      "Name": "MNE-BIDS",
+      "Version": "0.17.0",
+      "CodeURL": "https://mne.tools/mne-bids/"
+    }
+  ],
+  "SourceDatasets": [
+    {
+      "URL": "https://physionet.org/content/chbmit/1.0.0/"
+    }
+  ],
+  "DatasetDOI": "10.82901/nemar.nm000110"
 }
