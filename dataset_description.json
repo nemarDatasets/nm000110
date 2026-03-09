@@ -27,5 +27,6 @@
       "URL": "https://physionet.org/content/chbmit/1.0.0/"
     }
   ],
-  "DatasetDOI": "10.82901/nemar.nm000110"
+  "DatasetDOI": "10.82901/nemar.nm000110",
+  "Version": "1.0.0"
 }
