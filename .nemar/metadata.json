@@ -1,0 +1,87 @@
+{
+  "version": "2.0",
+  "pipeline_stage": "enriched",
+  "authors": {
+    "Jack Connolly": {},
+    "Herman Edwards": {},
+    "Blaise Bourgeois": {},
+    "S. Ted Treves": {},
+    "Ali Shoeb": {},
+    "John Guttag": {}
+  },
+  "title": "CHB-MIT",
+  "license": "ODC-By-1.0",
+  "dataset_type": "derivative",
+  "resource_type_general": "Dataset",
+  "modalities": [
+    "eeg"
+  ],
+  "resource_type_specific": "EEG Dataset",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/nemarDatasets/nm000110",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=nm000110",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.13026/C2K01R",
+      "identifier_type": "DOI",
+      "relation_type": "IsVersionOf"
+    },
+    {
+      "identifier": "10.21105/joss.01896",
+      "identifier_type": "DOI",
+      "relation_type": "IsDescribedBy"
+    }
+  ],
+  "sizes": [
+    "45.8 GB (2374 files)"
+  ],
+  "formats": [
+    ".edf",
+    ".json",
+    ".md",
+    ".py",
+    ".tsv",
+    ".yml"
+  ],
+  "description": "The CHB-MIT Scalp EEG Database is a collection of continuous EEG recordings from 22 pediatric subjects with intractable epilepsy, acquired at Children's Hospital Boston. The dataset comprises 686 EEG scans containing 198 annotated seizure events, recorded at 256 Hz using the International 10-20 electrode system with bipolar montages. Subjects (5 males ages 3-22; 17 females ages 1.5-19) were monitored for several days following anti-seizure medication withdrawal to characterize seizure patterns and assess surgical intervention candidacy. The original EEG data from PhysioNet has been converted to BIDS format with channel names standardized to the 10-05 montage naming convention.",
+  "methods_description": "EEG signals were recorded continuously at 256 samples per second with 16-bit resolution using the International 10-20 system of electrode positions with bipolar montages. Most recording files contain one hour of digitized EEG signals, with some containing two-hour or four-hour recordings. Additional signals including ECG and vagal nerve stimulus (VNS) were recorded in some cases. The original EEG data has been converted to BIDS format with channel names standardized to the 10-05 montage naming convention.",
+  "keywords": [
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "seizure detection"
+    },
+    {
+      "term": "Epilepsy",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004827"
+    },
+    {
+      "term": "pediatric"
+    },
+    {
+      "term": "scalp electroencephalography"
+    },
+    {
+      "term": "seizure annotation"
+    },
+    {
+      "term": "intractable epilepsy"
+    },
+    {
+      "term": "BIDS"
+    },
+    {
+      "term": "pediatric epilepsy"
+    }
+  ],
+  "source_hash": "5a8ff07c0305cdd50bd005a994e70f69663211743c98b61c1e2c59e78c8d4f5a"
+}
