@@ -1,6 +1,11 @@
 {
   "version": "2.0",
   "pipeline_stage": "enriched",
+  "title": "CHB-MIT",
+  "description": "The CHB-MIT Scalp EEG Database is a collection of continuous EEG recordings from 22 pediatric subjects (5 males, ages 3-22; 17 females, ages 1.5-19) with intractable epilepsy, acquired at Children's Hospital Boston. The dataset comprises 686 EEG recording files containing 198 annotated seizure events, recorded at 256 Hz using the International 10-20 electrode system with bipolar montages. Subjects were monitored for several days following anti-seizure medication withdrawal to characterize seizure patterns and assess surgical intervention candidacy. This BIDS-converted derivative preserves all original data while standardizing channel nomenclature and formatting to comply with BIDS standards.",
+  "methods_description": "Continuous scalp EEG monitoring was performed on pediatric subjects (ages 1.5-22 years) with intractable seizures following anti-seizure medication withdrawal in a controlled hospital environment. Signals were sampled at 256 samples per second with 16-bit resolution using the International 10-20 system of electrode positions with bipolar montages. Most files contain 23 EEG signals; additional signals such as ECG and vagal nerve stimulus were recorded in some cases. Recording files typically contain one hour of digitized EEG, though some contain two-hour or four-hour recordings. The original EDF files from PhysioNet have been converted to BIDS format with channel names standardized to match the standard 10-05 montage naming convention.",
+  "license": "ODC-By-1.0",
+  "dataset_type": "derivative",
   "authors": {
     "Jack Connolly": {},
     "Herman Edwards": {},
@@ -9,14 +14,56 @@
     "Ali Shoeb": {},
     "John Guttag": {}
   },
-  "title": "CHB-MIT",
-  "license": "ODC-By-1.0",
-  "dataset_type": "derivative",
-  "resource_type_general": "Dataset",
-  "modalities": [
-    "eeg"
+  "keywords": [
+    {
+      "term": "EEG",
+      "subject_scheme": "MeSH"
+    },
+    {
+      "term": "Epilepsy",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004827"
+    },
+    {
+      "term": "seizure detection",
+      "subject_scheme": "MeSH"
+    },
+    {
+      "term": "pediatric epilepsy",
+      "subject_scheme": "MeSH"
+    },
+    {
+      "term": "scalp EEG",
+      "subject_scheme": "MeSH"
+    },
+    {
+      "term": "bipolar montage",
+      "subject_scheme": "MeSH"
+    },
+    {
+      "term": "seizure annotation",
+      "subject_scheme": "MeSH"
+    },
+    {
+      "term": "intractable epilepsy",
+      "subject_scheme": "MeSH"
+    },
+    {
+      "term": "pediatric",
+      "subject_scheme": "MeSH"
+    },
+    {
+      "term": "seizure characterization",
+      "subject_scheme": "MeSH"
+    },
+    {
+      "term": "BIDS"
+    },
+    {
+      "term": "seizure onset detection",
+      "subject_scheme": "MeSH"
+    }
   ],
-  "resource_type_specific": "EEG Dataset",
   "related_identifiers": [
     {
       "identifier": "https://github.com/nemarDatasets/nm000110",
@@ -32,7 +79,17 @@
       "identifier": "10.13026/C2K01R",
       "identifier_type": "DOI",
       "relation_type": "IsVersionOf"
+    },
+    {
+      "identifier": "10.21105/joss.01896",
+      "identifier_type": "DOI",
+      "relation_type": "IsDescribedBy"
     }
+  ],
+  "resource_type_general": "Dataset",
+  "resource_type_specific": "EEG Dataset",
+  "modalities": [
+    "eeg"
   ],
   "sizes": [
     "45.8 GB (2374 files)"
@@ -45,47 +102,5 @@
     ".tsv",
     ".yml"
   ],
-  "description": "The CHB-MIT Scalp EEG Database is a collection of continuous EEG recordings from 22 pediatric subjects with intractable epilepsy, acquired at Children's Hospital Boston. The dataset comprises 686 EEG recordings with 198 annotated seizure events, collected during controlled anti-seizure medication withdrawal to characterize seizure patterns and assess surgical candidacy. Subjects included 5 males (ages 3-22) and 17 females (ages 1.5-19). Signals were sampled at 256 Hz using the International 10-20 electrode system with bipolar montages, and have been converted to BIDS format with standardized channel nomenclature and de-identified subject information.",
-  "methods_description": "Subjects were monitored continuously with scalp EEG following anti-seizure medication withdrawal in a hospital setting. EEG signals were recorded at 256 samples per second with 16-bit resolution using the International 10-20 electrode system in bipolar montage configuration. Most recordings contained 23 EEG channels; additional signals including ECG and vagal nerve stimulus were recorded in some cases. Recording files typically contained one hour of continuous data, with some cases containing two-hour or four-hour recordings. The original .edf files from PhysioNet have been converted to BIDS format with standardized channel nomenclature and de-identified subject information.",
-  "keywords": [
-    {
-      "term": "EEG"
-    },
-    {
-      "term": "seizure detection"
-    },
-    {
-      "term": "Epilepsy",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D004827"
-    },
-    {
-      "term": "pediatric"
-    },
-    {
-      "term": "scalp electroencephalography"
-    },
-    {
-      "term": "bipolar montage"
-    },
-    {
-      "term": "seizure annotation"
-    },
-    {
-      "term": "BIDS"
-    },
-    {
-      "term": "intractable epilepsy"
-    },
-    {
-      "term": "pediatric EEG"
-    },
-    {
-      "term": "medication withdrawal"
-    },
-    {
-      "term": "surgical candidacy assessment"
-    }
-  ],
-  "source_hash": "5a8ff07c0305cdd50bd005a994e70f69663211743c98b61c1e2c59e78c8d4f5a"
+  "source_hash": "cdc82eb48c00a2c9d23c34f8e48a834e15feed57ceb436e2ce8ba14829467b17"
 }
